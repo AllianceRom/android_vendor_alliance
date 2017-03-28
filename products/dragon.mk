@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The Pure Nexus Project
+# Copyright (C) 2017 The Alliance
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include pure tablet configuration
-include vendor/pure/configs/pure_tablet.mk
+# Include alliance tablet configuration
+include vendor/allianceiance/configs/alliance_tablet.mk
 
 # Inherit AOSP device configuration for dragon
 $(call inherit-product, device/google/dragon/aosp_dragon.mk)

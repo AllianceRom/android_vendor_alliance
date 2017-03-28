@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The Pure Nexus Project
+# Copyright (C) 2017 The Alliance
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/pure/overlay/common
+    vendor/alliance/overlay/common
 
 # Main Required Packages
 PRODUCT_PACKAGES += \
@@ -27,6 +27,4 @@ PRODUCT_PACKAGES += \
 
 # Custom Packages
 PRODUCT_PACKAGES += \
-    Busybox \
-    ThemeInterfacer \
-    OmniStyle
+    Busybox 

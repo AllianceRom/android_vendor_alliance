@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The Pure Nexus Project
+# Copyright (C) 2017 The Alliance
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,11 +14,11 @@
 
 # init.d script support
 PRODUCT_COPY_FILES += \
-    vendor/pure/prebuilt/bin/sysinit:system/bin/sysinit
+    vendor/alliance/prebuilt/bin/sysinit:system/bin/sysinit
 
 # Pure-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/pure/prebuilt/etc/init.purenexus.rc:root/init.purenexus.rc
+    vendor/alliance/prebuilt/etc/init.purenexus.rc:root/init.purenexus.rc
 
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The Pure Nexus Project
+# Copyright (C) 2017 The Alliance
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include pure telephony configuration
-include vendor/pure/configs/pure_phone.mk
+# Include alliance telephony configuration
+include vendor/alliance/configs/alliance_phone.mk
 
 # Inherit AOSP device configuration for bullhead
-$(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
+$(call inherit-product, device/lge/bullhead/alliance_bullhead.mk)
 
 # Inherit arm64 phone gapps
 $(call inherit-product-if-exists, vendor/gapps/arm64-phone-gapps.mk)

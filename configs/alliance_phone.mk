@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The Pure Nexus Project
+# Copyright (C) 2017 The Alliance
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/pure/configs/aosp_fixes.mk
-include vendor/pure/configs/bootanimation.mk
-include vendor/pure/configs/pure_main.mk
-include vendor/pure/configs/system_additions.mk
-include vendor/pure/configs/version.mk
+include vendor/alliance/configs/aosp_fixes.mk
+include vendor/alliance/configs/bootanimation.mk
+include vendor/alliance/configs/alliance_main.mk
+include vendor/alliance/configs/system_additions.mk
+include vendor/alliance/configs/version.mk
 
 # Telephony packages
 PRODUCT_PACKAGES += \

@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The Pure Nexus Project
+# Copyright (C) 2017 The Alliance
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#PureNexus versioning
-ifndef PURE_BUILD_TYPE
-    PURE_BUILD_TYPE := UNOFFICIAL
+#TheAlliance versioning
+ifndef ALLIANCE_BUILD_TYPE
+    ALLIANCE_BUILD_TYPE := OFFICIAL
 endif
 
-PURE_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(PURE_BUILD_TYPE)
+ALLIANCE_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(ALLIANCE_BUILD_TYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.pure.version=$(PURE_VERSION)
+    ro.alliance.version=$(ALLIANCE_VERSION)
 
