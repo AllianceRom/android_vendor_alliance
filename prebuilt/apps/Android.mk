@@ -12,23 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include overlays
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/alliance/overlay/common
+LOCAL_PATH := $(call my-dir)
 
-# Main Required Packages
-PRODUCT_PACKAGES += \
-    Launcher3 \
-    LiveWallpapersPicker
-
-# Include explicitly to work around Facelock issues
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full
-
-# Custom Packages
-PRODUCT_PACKAGES += \
-    Busybox 
-
-# AllianceControl
-PRODUCT_PACKAGES += \
-    AllianceControlAOSPPrebuilt
+include $(CLEAR_VARS)
+LOCAL_MODULE := AllianceControlAOSPPrebuilt
+LOCAL_SRC_FILES := AllianceControlAOSPPrebuilt/AllianceControlAOSPPrebuilt.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
