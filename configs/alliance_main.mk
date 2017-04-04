@@ -18,8 +18,12 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 # Main Required Packages
 PRODUCT_PACKAGES += \
+    Calendar \
+    Camera2 \
+    DeskClock \
     Launcher3 \
     LiveWallpapersPicker
+
 
 # Include explicitly to work around Facelock issues
 PRODUCT_PACKAGES += \
