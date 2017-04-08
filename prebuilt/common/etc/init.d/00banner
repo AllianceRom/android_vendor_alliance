@@ -1,0 +1,29 @@
+#!/system/bin/sh
+#
+# Print startup info
+#
+
+L="log -p i -t AllianceROM"
+AL="log -p i -t aosp"
+
+$AL "Welcome to Android `getprop ro.build.version.release` / The Android Open Source Project";
+
+
+$L "               #K]]]]H               "
+$L "             ,@NNNN]]]]              "
+$L "            )DNNNNDK]]]]r            "
+$L "           @NNNNDNNND]]]]r           "
+$L "          @NNNM, KNNNNM]]]]          "
+$L "        ~MNNNM;   9NNNRK]]]],        "
+$L "       xDNNNM;:    XDDDDN]]]]r       "
+$L "      4NNNNM!;      *DRRRN]]]]H      "
+$L "    .@NNNRUu>        \]NNNN]]]]]     "
+$L "   ,MNNNMnnn           j]]]]]]]]]r   "
+$L "  aNNNNMnnnn>:,,,,,,,,,j]]]]]]]]]]r  "
+$L " #NNNNMnnnn;;;;>nj]]]]]]]]]]]]]]]]]] "
+$L "9NNNRUnnnnu///unnnn]]]]]]]]]]]]]]]]];"
+$L " ?DMnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn; "
+$L "  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  "
+$L "====================================="
+$L "****         The Alliance        ****"
+$L "====================================="

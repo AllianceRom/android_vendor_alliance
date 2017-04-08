@@ -1,0 +1,18 @@
+#!/system/bin/sh
+
+if [ -f /data/alliance/exitsafemode ]; then
+  setprop persist.sys.safemode 0
+  setprop persist.sw.safemode 0
+  echo "0" > /data/property/persist.sys.safemode
+  echo "0" > /data/property/persist.sw.safemode
+  rm /data/alliance/exitsafemode
+fi
+
+if [ -f /data/alliance/safemode ]; then
+  setprop persist.sys.safemode 1
+  setprop persist.sw.safemode 1
+  echo "1" > /data/property/persist.sys.safemode
+  echo "1" > /data/property/persist.sw.safemode
+  touch /data/alliance/exitsafemode
+  rm /data/alliance/safemode
+fi
