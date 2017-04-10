@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     Calendar \
     Camera2 \
     DeskClock \
+    Gallery2 \
     Launcher3 \
     LiveWallpapersPicker
 
